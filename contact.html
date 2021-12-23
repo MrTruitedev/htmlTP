@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<header>
+    <img src="index.jpg">
+    <h1>Bienvenue sur mon site !</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#article3">Blog</a></li>
+            <li><a href="">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <form method="post" action="monPhp.php">
+        <fieldset>
+            <legend>Me contacter</legend>
+            <div>
+                <label for="name" class="required">Nom :</label>
+                <input type="text" required name="name" placeholder="Ex : Martin" minlength="2" maxlength="20"><br/>
+            </div>
+            <div>
+                <label for="mail"  class="required">E-mail :</label>
+                <input type="mail" name="mail" required placeholder="Ex : martin@msn.com"><br/>
+            </div>
+            <div>
+                <label for="comment">Votre commentaire :</label><br/>
+                <textarea name="comment" cols="70" rows="10" placeholder="Votre commentaire ici"></textarea><br/>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" checked>
+                <label for="checkbox">Envoi d'une copie par mail</label>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Réinitialiser">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <ul>
+            <li><a href="">Menu1</a></li>
+            <li><a href="">Menu2</a></li>
+            <li><a href="">Menu3</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
